@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
+import ButtonBar from "./ButtonBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,6 +19,7 @@ function App() {
       </div> */}
         <span className="sub-title">城北营销分公司</span>
       </div>
+      <ButtonBar></ButtonBar>
     </div>
   );
 }

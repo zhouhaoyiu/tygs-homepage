@@ -1,10 +1,93 @@
 .button-bar {
   width: 100%;
-  height: 5.5rem;
+  height: 4rem;
   display: flex;
   place-items: center;
-  background: #2B5CAB;
+  // justify-content: center;
+  align-items: center;
+  background: #2b5cab;
   border-bottom: 1px solid #ebebeb;
-  .button-bar-item {
+  .full {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-phone {
+    width: 20%;
+    height: 100%;
+
+    border: none;
+    display: flex;
+    place-items: center;
+    padding-left: 10%;
+    cursor: pointer;
+    a {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .icon-phone {
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAAAXNSR0IArs4c6QAAAxFJREFUSA2tlktIVFEYxx2VsgdmGYXZg8CkoHRC2rSxSCoIMqInoctaBEFBRRCV0cqoTfTYR5CQQRCVLlq1LDAzE0qoKQoDqXwSqdPvf7lnuHPuuXdmoj/85jv3+75zvvs4j0kUxSidTi8kvARqoQFqoBpWwmJIwCR8gc+Qgh54A1/hWyKRmMGGpI5Zotg8HDtgF2yENTAfCtVHOryFF9DJDbzHhkXBYjgMr+AP/E8NM9h1WGUqJ7jQU4t2OAnFEKU0gR8wBiMwARVQDgtgDsRJn+AQT99fROEKaIE4DRK8BXoj62GuGZ22br4amuA0dMEUROkxgVIVroF3UVn4H0KVKZTLklsGB2ASXBrHmVThdTDmysA3AfW5irni9OuMGFPzZ5sKV8ENR9IMvjYzKO2dcBsuGZ+x+Br92DlsmfzYJKTA1gCOylJyhuAsaNLsBk20frgL3WC0h8Yx0Kv6hdVEk7ROt4OWn9buPUgxgXrIa6TdCoprAg7CZWLD2GyRrMJZwtesYpCPOkjynjo4CL6S4HXONh3qwPXKcEfqGpG4ZRlfl85aJtpQXNLEG3UF8GkCHY0fPSJKx3J4Arb09G2gdbsZWuEZ2PqJoylieLebDiVw0x6J6z4ILS98s0FbolZCUJ+4qHNXcXhJPgHTwRFo/4atSseWwhE4A7W+T8W7wdZLHDrR4kXSPtD3s6XXqYKiPRD8QHutRsXuD/iDzQdcZLbZ0B0Q3ARDwR6Btg4RDb4M7O3wgh9rIKZ17tIVnNo3PNlTXgteB79LptM0wXErQaeVpPHsMb0AP3tBm4gnO8n5b8HP1QzWxvAdzsOo73+O7fDbSWxo8/BjU74NGwY+5XpHvk+TrcX0ol0PW0DnsT5BJWibjFIvgUWmv3l95jrO6u1cpfMIe+0jeG2S8S2nfQdCS83k2LaQwuq7FO5TqAv7FPS6N8BBWA15yy48kEdPfcNmnzzSMyl9tMy88I7ATIQnmcXFRdC3zMzATMK/NTRhe+E4n0f/Oj2FjkB5uYEVmKjZ6XUs4Efntv5fZy3Bv31keTuKuHKfAAAAAElFTkSuQmCC);
+      height: 1.5rem;
+      width: 2rem;
+      margin-right: 0.5rem;
+    }
+    .icon {
+      display: inline-block;
+      background-size: 100% 100%;
+    }
+  }
+  .button-phone:hover {
+    // 加一层灰色的滤镜
+    filter: brightness(0.9);
+  }
+  .button-bar-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    // justify-content: center;
+    align-items: center;
+    .button-bar-item {
+      width: 10%;
+      height: 100%;
+      display: flex;
+      place-items: center;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      // background: saddlebrown;
+      .button-bar-button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: transparent;
+        font-size: 1.3rem;
+        // font-weight: bold;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        // transition: all 0.2s ease-in-out;
+        .button-bar-title {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          place-items: center;
+          justify-content: center;
+          align-items: center;
+        }
+        &:hover {
+          font-weight: bold;
+          background: #3e7fe9;
+        }
+      }
+    }
   }
 }

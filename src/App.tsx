@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import ButtonBar from "./ButtonBar";
+import CustomerService from "./CustomerService";
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0);
 
   return (
@@ -20,6 +22,14 @@ function App() {
         <span className="sub-title">城北营销分公司</span>
       </div>
       <ButtonBar></ButtonBar>
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/Culture" element={<h1>Culture</h1>} />
+        <Route
+          path="/CustomerService"
+          element={<CustomerService></CustomerService>}
+        />
+      </Routes>
     </div>
   );
 }

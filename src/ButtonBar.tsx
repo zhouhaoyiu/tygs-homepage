@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./ButtonBar.scss";
-function ButtonBar(): JSX.Element {
+
+const ButtonBar = (): JSX.Element => {
   return (
     <div className="button-bar">
       <div className="button-phone">
@@ -29,6 +30,6 @@ function ButtonBar(): JSX.Element {
       </div>
     </div>
   );
-}
+};
 
 export default ButtonBar;

@@ -1,10 +1,10 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import ButtonBar from "./ButtonBar";
 import CustomerService from "./CustomerService";
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   const [count, setCount] = useState(0);
 
   return (
@@ -32,6 +32,6 @@ function App(): JSX.Element {
       </Routes>
     </div>
   );
-}
+};
 
 export default App;

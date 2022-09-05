@@ -24,7 +24,16 @@ const App = (): JSX.Element => {
       <ButtonBar></ButtonBar>
       <Routes>
         <Route path="/" element={<h1>Home</h1>} />
-        <Route path="/Culture" element={<h1>Culture</h1>} />
+        <Route
+          path="/Culture"
+          element={
+            <>
+              <h1>德泽百业，水润万家</h1>
+              <h1>卓越超群，源远流长</h1>
+              <h1>纳百川水，穿千层石</h1>
+            </>
+          }
+        />
         <Route
           path="/CustomerService"
           element={<CustomerService></CustomerService>}

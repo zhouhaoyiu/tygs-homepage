@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
+import "animate.css";
 import ButtonBar from "./ButtonBar";
 import CustomerService from "./CustomerService";
 
@@ -23,15 +24,18 @@ const App = (): JSX.Element => {
       </div>
       <ButtonBar></ButtonBar>
       <Routes>
-        <Route path="/" element={<h1>Home</h1>} />
+        <Route
+          path="/"
+          element={<h1 className="animate__animated animate__zoomIn">Home</h1>}
+        />
         <Route
           path="/Culture"
           element={
-            <>
+            <div className="animate__animated animate__zoomIn">
               <h1>德泽百业，水润万家</h1>
               <h1>卓越超群，源远流长</h1>
               <h1>纳百川水，穿千层石</h1>
-            </>
+            </div>
           }
         />
         <Route

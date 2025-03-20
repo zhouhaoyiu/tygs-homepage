@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ButtonBar.scss";
+import { JSX } from "react";
 
 const ButtonBar = (): JSX.Element => {
   return (

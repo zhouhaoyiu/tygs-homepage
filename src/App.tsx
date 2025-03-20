@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { JSX, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import "animate.css";

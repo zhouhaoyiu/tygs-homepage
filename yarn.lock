@@ -638,10 +638,10 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
-ahooks@^3.8.4:
-  version "3.8.4"
-  resolved "https://registry.npmmirror.com/ahooks/-/ahooks-3.8.4.tgz#ee2a22d52b6ee57743a1f6ab51c91a7c36bcd7c6"
-  integrity sha512-39wDEw2ZHvypaT14EpMMk4AzosHWt0z9bulY0BeDsvc9PqJEV+Kjh/4TZfftSsotBMq52iYIOFPd3PR56e0ZJg==
+ahooks@^3.8.5:
+  version "3.8.5"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.8.5.tgz#0fe2e9ae79d11d55ced0d07b9535a36cbffb6474"
+  integrity sha512-Y+MLoJpBXVdjsnnBjE5rOSPkQ4DK+8i5aPDzLJdIOsCpo/fiAeXcBY1Y7oWgtOK0TpOz0gFa/XcyO1UGdoqLcw==
   dependencies:
     "@babel/runtime" "^7.21.0"
     dayjs "^1.9.1"

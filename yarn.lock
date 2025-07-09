@@ -1113,10 +1113,10 @@ update-browserslist-db@^1.1.1:
     escalade "^3.2.0"
     picocolors "^1.1.1"
 
-vite@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.1.tgz#b7ebb1e8a7d7f0f42867a545561fb72b34b2b13f"
-  integrity sha512-BiKOQoW5HGR30E6JDeNsati6HnSPMVEKbkIWbCiol+xKeu3g5owrjy7kbk/QEMuzCV87dSUTvycYKmlcfGKq3Q==
+vite@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-7.0.3.tgz#3bf15e1a6d054960406a70fa1052043938b39c5a"
+  integrity sha512-y2L5oJZF7bj4c0jgGYgBNSdIu+5HF+m68rn2cQXFbGoShdhV1phX9rbnxy9YXj82aS8MMsCLAAFkRxZeWdldrQ==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.6"

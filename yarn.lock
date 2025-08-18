@@ -734,10 +734,10 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
-ahooks@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.9.0.tgz#e3cdf74ca1bb0668c7c342a8160eb5700f3397d6"
-  integrity sha512-r20/C38aFyU3Zqp3620gkdLnxmQhnmWORB3eGGTDlM4i/fOc0GUvM+f2oleMzEu7b3+pHXyzz+FB6ojxsUdYdw==
+ahooks@^3.9.1:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.9.1.tgz#36143bd688177c4dcd92eefcb6e5058e4cf99bb3"
+  integrity sha512-5HaldTF43CywmC9qsVqXjbszimAKXXtPKQp0NUtelml0BM3x8i2rq/XNcvjQnw2w7AxbhFQSPDYTdbr1CkbRfg==
   dependencies:
     "@babel/runtime" "^7.21.0"
     dayjs "^1.9.1"

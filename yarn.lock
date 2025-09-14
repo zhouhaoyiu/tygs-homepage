@@ -710,6 +710,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.8.tgz#958b91c991b1867ced318bedea0e215ee050726e"
   integrity sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==
 
+"@types/js-cookie@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-3.0.6.tgz#a04ca19e877687bd449f5ad37d33b104b71fdf95"
+  integrity sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==
+
 "@types/react-dom@^19.1.9":
   version "19.1.9"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.1.9.tgz#5ab695fce1e804184767932365ae6569c11b4b4b"
@@ -734,12 +739,13 @@
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.17.0"
 
-ahooks@^3.9.4:
-  version "3.9.4"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.9.4.tgz#db8c5ee743b9728acaccda2c0ea980ca6dca9235"
-  integrity sha512-NkbX0mamCz4aBX27mZnObbzqcM9S4fzpjVf/6yOvmHh+McBo74xQw5Yz5ry4q2cLMkfNUjhe2q3M5RpjfMVu4g==
+ahooks@^3.9.5:
+  version "3.9.5"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.9.5.tgz#de9bb2233ae8e95ac2b2d2ba1dd716eb6adf4228"
+  integrity sha512-TrjXie49Q8HuHKTa84Fm9A+famMDAG1+7a9S9Gq6RQ0h90Jgqmiq3CkObuRjWT/C4d6nRZCw35Y2k2fmybb5eA==
   dependencies:
     "@babel/runtime" "^7.21.0"
+    "@types/js-cookie" "^3.0.6"
     dayjs "^1.9.1"
     intersection-observer "^0.12.0"
     js-cookie "^3.0.5"

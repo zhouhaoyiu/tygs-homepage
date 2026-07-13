@@ -1,4 +1,4 @@
-import { JSX, useState } from "react";
+import { JSX } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import "animate.css";
@@ -6,8 +6,6 @@ import ButtonBar from "./ButtonBar";
 import CustomerService from "./CustomerService";
 
 const App = (): JSX.Element => {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
       <div className="title-area">

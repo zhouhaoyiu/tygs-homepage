@@ -13,7 +13,7 @@
     "ahooks": "^3.9.7",
     "animate.css": "^4.1.1",
     "react": "^19.2.8",
-    "react-dom": "^19.2.7",
+    "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.1",
     "sass": "^1.101.3",
     "sass-loader": "^17.0.0"

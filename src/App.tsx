@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import "./App.scss";
 import "animate.css";
 import ButtonBar from "./ButtonBar";

@@ -24,7 +24,7 @@
     "@vitejs/plugin-react": "^6.1.1",
     "oxlint": "1.82.0",
     "typescript": "^7.0.2",
-    "vite": "^8.2.2"
+    "vite": "^8.3.0"
   },
   "packageManager": "pnpm@11.15.1"
 }

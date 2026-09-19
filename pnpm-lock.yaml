@@ -24,11 +24,11 @@ importers:
         specifier: ^8.3.1
         version: 8.3.1(react-dom@19.2.8(react@19.3.0))(react@19.3.0)
       sass:
-        specifier: ^1.104.0
-        version: 1.104.0
+        specifier: ^1.104.1
+        version: 1.104.1
       sass-loader:
         specifier: ^17.0.1
-        version: 17.0.1(sass@1.104.0)
+        version: 17.0.1(sass@1.104.1)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -38,7 +38,7 @@ importers:
         version: 19.2.7(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: ^6.1.1
-        version: 6.1.1(vite@8.3.0(sass@1.104.0))
+        version: 6.1.1(vite@8.3.0(sass@1.104.1))
       oxlint:
         specifier: 1.83.0
         version: 1.83.0
@@ -47,7 +47,7 @@ importers:
         version: 7.0.2
       vite:
         specifier: ^8.3.0
-        version: 8.3.0(sass@1.104.0)
+        version: 8.3.0(sass@1.104.1)
 
 packages:
 
@@ -720,8 +720,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.104.0:
-    resolution: {integrity: sha512-btHMApW2bgolvClhRW8AlQJzgI9lUB3pPSofBQQT+E46GWvf9o0TVQ13SYv5riWZVFyPN+JNz3TKW9XhBlc10w==}
+  sass@1.104.1:
+    resolution: {integrity: sha512-yDA+1aIG3EHgN4V/BvuhCvu61FF6hEd4e+9DxikUm9U0CAGuvdIZ/UYy7qbOxjhbbWQraoyLlMuzdRGOSV5Bmw==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -1026,10 +1026,10 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@vitejs/plugin-react@6.1.1(vite@8.3.0(sass@1.104.0))':
+  '@vitejs/plugin-react@6.1.1(vite@8.3.0(sass@1.104.1))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.0(sass@1.104.0)
+      vite: 8.3.0(sass@1.104.1)
 
   ahooks@3.10.0(react-dom@19.2.8(react@19.3.0))(react@19.3.0):
     dependencies:
@@ -1206,11 +1206,11 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.8
       '@rolldown/binding-win32-x64-msvc': 1.2.8
 
-  sass-loader@17.0.1(sass@1.104.0):
+  sass-loader@17.0.1(sass@1.104.1):
     optionalDependencies:
-      sass: 1.104.0
+      sass: 1.104.1
 
-  sass@1.104.0:
+  sass@1.104.1:
     dependencies:
       chokidar: 5.0.0
       immutable: 5.1.9
@@ -1254,7 +1254,7 @@ snapshots:
       '@typescript/typescript-win32-arm64': 7.0.2
       '@typescript/typescript-win32-x64': 7.0.2
 
-  vite@8.3.0(sass@1.104.0):
+  vite@8.3.0(sass@1.104.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -1263,4 +1263,4 @@ snapshots:
       tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.104.0
+      sass: 1.104.1

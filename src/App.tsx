@@ -1,46 +1,20 @@
-import { JSX } from "react";
-import { Route, Routes } from "react-router";
+import { useState } from "react";
+import { Link, NavLink, Navigate, Route, Routes } from "react-router";
+import { Phone, Wrench, MapPin, Droplets, ArrowUpRight, ChevronRight, Search, Copy, Check } from "lucide-react";
+import logo from "./assets/water-logo.png";
 import "./App.scss";
-import "animate.css";
-import ButtonBar from "./ButtonBar";
-import CustomerService from "./CustomerService";
-
-const App = (): JSX.Element => {
-  return (
-    <div className="App">
-      <div className="title-area">
-        <span className="title">太原供水集团</span>
-        {/* <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div> */}
-        <span className="sub-title">城北营销分公司</span>
-      </div>
-      <ButtonBar></ButtonBar>
-      <Routes>
-        <Route
-          path="/"
-          element={<h1 className="animate__animated animate__zoomIn">Home</h1>}
-        />
-        <Route
-          path="/Culture"
-          element={
-            <div className="animate__animated animate__zoomIn">
-             
-            </div>
-          }
-        />
-        <Route
-          path="/CustomerService"
-          element={<CustomerService></CustomerService>}
-        />
-      </Routes>
-    </div>
-  );
-};
-
-export default App;
+const hotline="0351-3094444";
+const topics=[
+ {title:"家中突然停水",category:"用水问题",body:"先查看同楼或相邻住户是否也停水，记录开始时间。联系物业核实楼内阀门与二次供水设施情况；向供水热线提供小区、楼栋、单元和停水范围。"},
+ {title:"发现漏水或井盖破损",category:"报修",body:"记下道路、小区和附近明显地标。与积水、破损井盖保持距离，拨打供水热线说明位置和现场情况。不要自行下井或操作公共供水阀门。"},
+ {title:"核对水费账单",category:"水费",body:"准备缴费号、账期、上次和本次水表读数、缴费凭证。向客服说明需要核对的具体账单和金额。"},
+ {title:"过户与人口核增",category:"业务办理",body:"拨打供水热线，说明拟办理的业务和房屋所在区域，确认受理网点、所需材料和办理时间。"},
+ {title:"水表持续转动",category:"用水问题",body:"关闭家中所有用水设备，观察水表是否仍有变化。检查水龙头、马桶水箱和可见管线；需要维修时联系物业或供水热线。"},
+ {title:"日常节水",category:"节水",body:"发现滴漏及时维修；洗漱时随用随开，洗衣时合理安排水量。定期核对水表读数，留意用水量突然增加。"},
+];
+function TopicList(){const [search,setSearch]=useState("");const filtered=topics.filter(t=>(t.title+t.category+t.body).includes(search.trim()));return <><div className="section-title"><h2>常见问题</h2><label className="search"><Search size={17}/><input aria-label="搜索常见问题" value={search} onChange={e=>setSearch(e.target.value)} placeholder="停水、账单、过户"/></label></div><div className="questions">{filtered.map(t=><details key={t.title}><summary><span>{t.category}</span>{t.title}<ChevronRight size={18}/></summary><p>{t.body}</p></details>)}{!filtered.length&&<p className="empty">没有匹配的问题</p>}</div></>;}
+function Home(){return <><section className="intro"><p className="eyebrow">城北营销 · 用水服务</p><h1>太原供水</h1><p>用水咨询、水费查询与供水报修</p><a className="hotline" href={"tel:"+hotline}><Phone size={23}/>{hotline}<ArrowUpRight size={20}/></a><span className="hours">24 小时客户服务热线</span></section><div className="quick-services"><Link to="/CustomerService"><Wrench/><div><strong>供水报修</strong><span>停水、漏水与设施问题</span></div><ChevronRight size={18}/></Link><a href="#offices"><MapPin/><div><strong>营业网点</strong><span>地址与联系电话</span></div><ChevronRight size={18}/></a><Link to="/Culture"><Droplets/><div><strong>用水常识</strong><span>日常检查与节水</span></div><ChevronRight size={18}/></Link></div><TopicList/><Offices/></>;}
+function Offices(){return <section id="offices"><div className="section-title"><h2>营业网点</h2><a className="source" href="https://ty.bendibao.com/news/2020919/46433.shtm" target="_blank" rel="noreferrer">网点资料 · 2025-10 <ArrowUpRight size={14}/></a></div><div className="office-list">{[{name:"教场巷营业厅",address:"教场巷18号，城北营销分公司一楼",phone:"0351-3175007"},{name:"北大街营业厅",address:"北大街109号，供水大楼东侧100米",phone:"0351-3020320"}].map(o=><article key={o.name}><MapPin size={22}/><div><h3>{o.name}</h3><p>{o.address}</p></div><a href={"tel:"+o.phone}><Phone size={16}/>{o.phone}</a></article>)}</div></section>;}
+function Service(){const [copied,setCopied]=useState(false);async function copy(){try{await navigator.clipboard.writeText(hotline);setCopied(true);}catch{setCopied(false);}}return <><header className="page-heading"><p className="eyebrow">服务联系</p><h1>供水报修与咨询</h1></header><section className="contact"><Phone size={30}/><div><p>24 小时客户服务热线</p><a href={"tel:"+hotline}>{hotline}</a></div><button onClick={copy} title="复制电话号码" aria-label="复制电话号码">{copied?<Check/>:<Copy/>}</button></section><section className="report-info"><h2>报修时请说明</h2><ol><li><span>01</span><div><h3>所在位置</h3><p>道路、小区、楼栋、单元与附近地标</p></div></li><li><span>02</span><div><h3>现场情况</h3><p>问题开始时间、影响范围、漏水或停水现象</p></div></li><li><span>03</span><div><h3>联系方式</h3><p>联系人与便于回访的电话号码</p></div></li></ol></section><Offices/></>;}
+function Knowledge(){return <><header className="page-heading"><p className="eyebrow">日常用水</p><h1>用水常识</h1></header><TopicList/></>;}
+export default function App(){return <><header className="site-header"><Link to="/" className="brand"><img src={logo} alt="太原供水标志"/><div><strong>太原供水集团</strong><span>城北营销分公司</span></div></Link><a className="header-phone" href={"tel:"+hotline}><Phone size={17}/>{hotline}</a></header><nav className="site-nav"><NavLink to="/" end>用水服务</NavLink><NavLink to="/CustomerService">报修联系</NavLink><NavLink to="/Culture">用水常识</NavLink></nav><main><Routes><Route path="/" element={<Home/>}/><Route path="/CustomerService" element={<Service/>}/><Route path="/Culture" element={<Knowledge/>}/><Route path="*" element={<Navigate to="/" replace/>}/></Routes></main><footer><div><strong>太原供水集团</strong><span>城北营销分公司</span></div><a href={"tel:"+hotline}><Phone size={15}/>{hotline}</a></footer></>;}

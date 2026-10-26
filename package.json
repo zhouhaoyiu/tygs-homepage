@@ -15,7 +15,7 @@
     "lucide-react": "^1.58.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "react-router": "^8.4.0",
+    "react-router": "^8.5.0",
     "sass": "^1.105.2",
     "sass-loader": "^17.0.1"
   },

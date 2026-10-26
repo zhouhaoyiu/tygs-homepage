@@ -7,14 +7,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "oxlint --deny typescript/no-explicit-any .",
+    "test:runtime": "node scripts/check-react-runtime.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
     "ahooks": "^3.10.0",
     "animate.css": "^4.1.1",
     "lucide-react": "^1.61.0",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-router": "^8.5.0",
     "sass": "^1.106.1",
     "sass-loader": "^17.0.1"
